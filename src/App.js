@@ -45,8 +45,16 @@ this.setState({
   render() {
     return (
       <div>
+        <div className="wrapper">
+        <div className="main">
+        <div className="container">
+        <div className="row">
+          <div className="col-xs-5 title-container">
         <Title />
+        </div>
+        <div className="col-xs-7 form-container">
         <Form getWeather={this.getWeather}/>
+       
         <Weather temperature={this.state.tempertaure}
         city={this.state.city}
         country={this.state.country}
@@ -54,6 +62,11 @@ this.setState({
         description={this.state.description}
         error={this.state.error}
         />
+        </div>
+        </div>
+      </div>
+      </div>
+      </div>
       </div>
     );
   }
